@@ -1,8 +1,24 @@
 basic.forever(function () {
-    if (input.buttonIsPressed(Button.A)) {
-        basic.showString("" + (input.temperature()))
-    }
-    if (input.buttonIsPressed(Button.B)) {
-        music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Once)
-    }
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . # . .
+        . . . . .
+        . . . . .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . # # # .
+        . . # . .
+        . . . . .
+        `)
+    basic.showIcon(IconNames.Heart)
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . # # # .
+        . . # . .
+        . . . . .
+        `)
 })
